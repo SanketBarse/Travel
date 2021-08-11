@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 1.7px;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+/* ############utility class############ */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.text-black{
+    background-color: #262632;
+}
+
+
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+
+
+.text-red{
+    color: #e6394e;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333333;
+}
+.text-grey{
+    color: #555555;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 0.5em;
+    font-weight: 500;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+
+.btn-primary{
+    background-color: #ffffff;
+    border-radius: 10em;
+
+}
+.btn:hover{
+    background-color:#ddd;
+}
+.secondary-btn:hover{
+    color:red;
+}
+
+
+
+
+
+.header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/pexels-victor-freitas-772665.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.navbar{
+    padding: 1rem;
+}
+/* .header .navbar .logo,
+.header .navbar a{
+    color: white; 
+} */
+.navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+}
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+
+}
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+.navbar a:hover{
+    border-bottom: 1px solid #ffffff;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+/* ########################## header content ######################### */
+.header-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    
+}
+/* ############################# section area ########################## */
+
+.showcase{
+    background-color: #dddddd ;
+    padding: 10rem;
+}
+.row{
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(8, 3, 3, 0.377);
+    
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box,
+.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .img-box,
+.row1 .text-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+ 
+    height: 100%;
+}
+.row .text-box{
+    
+    padding: 2em;
+    margin-top: 1em;
+    
+}
+.row .text-box p{
+    margin-top: 2em;    
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;  
+    object-fit: cover; 
+}
+.small-btn{
+    border: 0.15em solid #e6394e;
+    margin-top: 1em;
+}
+.small-btn:hover{
+    background-color:#fcf2;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ################## bottom ################ */
+.main-box{
+     padding: 10rem;    
+     margin: auto;  
+}
+.box-wrapper{
+    height: 250px;
+}
+.box{
+    width: 33.3333333333333333%;
+    float: left;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.438);
+    
+}
+.box-wrapper::after{ 
+    content: "";
+    display: block;
+    clear: both;
+    height: 20em;
+} 
+
+.box-heading{
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+.box1{
+   
+    height: 100%;
+    background-color: rgb(46, 44, 44)
+}
+.box2{
+    
+    height: 100%;
+    background-color: rgb(228, 102, 102);
+}
+.box3{
+    
+    height: 100%;
+    background-color: rgb(46, 44, 44)
+}
+/* #####################footer##################### */
+
+
+.footer{
+    background-color: #262632;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.social-media-links i{
+    margin: 2rem;
+}
+
+/* ###########################About page########################### */
+
+
+.about{
+    padding: 5rem 0;55
+    
+}
+.about .about-heading{
+    border-bottom: tomato 6px solid;
+}
+/* .about h2::after{
+    content: '';
+    display: block;
+    border: 6px solid #e6394e;
+    width: 30px;
+} */
+
+.list-section{
+    text-align: center;
+    
+}
+
+.list-section li::before{
+    content: '\2713';
+    color: #e6394e;
+    padding: 1rem;
+}
+.list-1{
+    float: left;
+    width: 50%;
+    padding-top: 5rem;
+}   
+.list-2{
+    float: right;
+    padding-top: 5rem;
+    width: 50%;
+}
+.list-section: '\2713';{
+    color: #e6394e;
+}
+.count .count-1{
+   float: left;
+   /* padding: 4rem; */
+    width: 25%;
+    text-align: center;
+    padding-top: 10rem;
+}
+.count::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.count .count-1 span{
+    font-weight: 700;
+}
+
+
+/* #############################banner######################### */
+
+.cta-banner{
+    background-color: #e6394e;
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.411);
+    margin-top: 2rem;
+ 
+}
+.cta-banner-left{
+    float: left;
+    width: 60%;
+}
+.cta-banner-right{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+.cta-btn{
+    text-align: center;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:beige ;
+    border: 4px solid wheat;
+    padding: 0.3rem;
+    letter-spacing: 0.4rem;
+    padding: 1rem 3rem;
+    margin-right: 2rem;
+}
+/* ###############contact page############### */
+
+.contact-form{
+    padding: 5rem 0px;
+    background-color: #f4f4f4;
+}
+.form-wrapper{
+ 
+}
+.form{
+    float: right;
+    width: 49%;
+  
+}
+.company-address{
+    float: left;
+    width: 49%;
+
+    background-color: #ffffff;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;   
+}
+.company-group img{
+    width: 100%;
+    height: 100%;
+
+}
+.company-group h2{
+    display: inline-block;
+}
+.company-group i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.company-group{
+    padding: 2rem 0;
+}
+.form label{
+    display: block;
+}
+.form-type{
+    padding: 2rem 0;
+    font-weight: 500;
+}
+textarea{
+    margin-top: 5rem;
+}
+.form{
+    background-color: #ffffff;
+}
+.form .cn-head{
+    border-bottom: tomato;
+}
+
+/* ############media Quiry################# */
+
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-box .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
